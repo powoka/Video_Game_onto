@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chongyang/ontologies/2021/1/Video_Game_ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/Video_Game_ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#play"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Kevin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Lora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:long"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">1</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#John"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Kevin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Lora"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mary"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">11000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">9000</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#play"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <Class IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

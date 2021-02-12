@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BestSeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casual_games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GameCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Game_is_multiplayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Game_suit_children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strategy_games"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#play"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produce"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Violence_Index"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nbPlayer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nbSale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Activision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asphalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blizzard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CSGO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectronicArts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kevin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mario_Kart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monument_Valley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nintendo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OverWatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ubisoft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ustwo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VALVE"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BestSeller"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#nbSale"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Game_is_multiplayer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#nbPlayer"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:long"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">1</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Game_suit_children"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Game"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#Violence_Index"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Casual_games"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer_game"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FPS"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Game"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Violence_Index"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Game"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#nbSale"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobile_game"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#age"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAC"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy_games"/>
+        <Class IRI="#Game"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BestSeller"/>
+        <Class IRI="#GameCompany"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Game"/>
+        <Class IRI="#GameCompany"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Game"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GameCompany"/>
+        <Class IRI="#Game_is_multiplayer"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GameCompany"/>
+        <Class IRI="#Game_suit_children"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GameCompany"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#Activision"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mobile_game"/>
+        <NamedIndividual IRI="#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAC"/>
+        <NamedIndividual IRI="#Asphalt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#Blizzard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#CSGO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FPS"/>
+        <NamedIndividual IRI="#CSGO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FPS"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#ElectronicArts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mobile_game"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Strategy_games"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAC"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mobile_game"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Strategy_games"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RAC"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#OverWatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FPS"/>
+        <NamedIndividual IRI="#OverWatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casual_games"/>
+        <NamedIndividual IRI="#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Computer_game"/>
+        <NamedIndividual IRI="#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FPS"/>
+        <NamedIndividual IRI="#Portal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#Ubisoft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#Ustwo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GameCompany"/>
+        <NamedIndividual IRI="#VALVE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#Activision"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#Blizzard"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#Blizzard"/>
+        <NamedIndividual IRI="#OverWatch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#ElectronicArts"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+        <NamedIndividual IRI="#Nintendo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#Ubisoft"/>
+        <NamedIndividual IRI="#Asphalt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#Ustwo"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#VALVE"/>
+        <NamedIndividual IRI="#CSGO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#produce"/>
+        <NamedIndividual IRI="#VALVE"/>
+        <NamedIndividual IRI="#Portal"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Asphalt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Asphalt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#CSGO"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Call_of_Duty"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Hearth_Stone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">12000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#John"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Kevin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Lora"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Mario_Kart"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">8000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Mary"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Monument_Valley"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">11000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Need_for_Speed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbPlayer"/>
+        <NamedIndividual IRI="#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#OverWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Violence_Index"/>
+        <NamedIndividual IRI="#Portal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nbSale"/>
+        <NamedIndividual IRI="#Portal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">9000</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPlayedBy"/>
+        <ObjectProperty IRI="#play"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <ObjectProperty IRI="#produce"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayedBy"/>
+        <Class IRI="#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <Class IRI="#Game"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayedBy"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <Class IRI="#GameCompany"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#age"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Violence_Index"/>
+        <Class IRI="#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Player"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nbPlayer"/>
+        <Class IRI="#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nbSale"/>
+        <Class IRI="#Game"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Violence_Index"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nbPlayer"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nbSale"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

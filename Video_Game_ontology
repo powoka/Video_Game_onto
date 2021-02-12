@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/simon/ontologies/2021/1/untitled-ontology-1#"
+     xml:base="http://www.semanticweb.org/simon/ontologies/2021/1/untitled-ontology-1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/simon/ontologies/2021/1/untitled-ontology-1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isPlayedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#play"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#isProducedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#play -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#play"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#produce"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbSale"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#nbPlayer"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Violence_Index"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#age"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Call_of_Duty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Activision"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">16</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Hearth_Stone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">12000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</untitled-ontology-9:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Kevin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Kevin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</untitled-ontology-9:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Lora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Lora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">14</untitled-ontology-9:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        <untitled-ontology-9:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</untitled-ontology-9:age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mobile_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Strategy_games"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">11000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Need_for_Speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#RAC"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#ElectronicArts"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Nintendo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Mario_Kart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#OverWatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Blizzard"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbPlayer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12</untitled-ontology-9:nbPlayer>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Casual_games"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Computer_game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#FPS"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+        <untitled-ontology-9:isProducedBy rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE"/>
+        <untitled-ontology-9:Violence_Index rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</untitled-ontology-9:Violence_Index>
+        <untitled-ontology-9:nbSale rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9000</untitled-ontology-9:nbSale>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ubisoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Asphalt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Ustwo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Monument_Valley"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#VALVE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#CSGO"/>
+        <untitled-ontology-9:produce rdf:resource="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Portal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#BestSeller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_is_multiplayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#GameCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Game_suit_children"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chongyang/ontologies/2021/1/untitled-ontology-9#Player"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
